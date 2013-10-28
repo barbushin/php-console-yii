@@ -1,31 +1,23 @@
-PhpConsoleYii extension for Yii Framework
-============================================
+## PHP Console extension for Yii Framework
 
-This extension integrates YII with Google Chrome extension "PHP Console":
-https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef
+This extension integrates YII with Google Chrome extension [PHP Console](https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef)
 
-Requirements
-------------
+## Requirements
 
 * Yii Framework project
-* Install Google Chrome extension PHP Console https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef
+* Install Google Chrome extension [PHP Console](https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef)
 * Set output_buffering setting to true in php.ini (optional)
 
-Installation
-------------
+## Installation
 
 1. Download and extract the "phpconsole" folder to your extensions directory (i.e. /protected/extensions).
 2. Modify your config file (i.e. /protected/config/main.php)
 
-##### config file code 
-
-	// ....
+## Initialization & configuration
 
 	'preload' => array('log'),
 	
 	'components' => array(
-
-		// ...
 
 		'log' => array(
 			'class' => 'CLogRouter',
@@ -55,25 +47,21 @@ Installation
 		)
 	)
 
-    
-
-
-Usage
------
+## Usage
 
 Try this code in some controller:
 
-// log using Yii methods
-Yii::log('There is some debug message');
 
-// log using PHP Console debug method
-PC::debug('Short way to debug directly in PHP Console', 'some,debug,tags');
-echo $undefinedVar;
+	// log using Yii methods
+	Yii::log('There is some debug message');
 
-Resources
----------
+	// log using PHP Console debug method
+	PC::debug('Short way to debug directly in PHP Console', 'some,debug,tags');
+	echo $undefinedVar;
 
-PhpConsole homepage: http://php-console.com
-PhpConsoleYii homepage: http://www.yiiframework.com/extension/php-console
-PhpConsoleYii repository: https://github.com/barbushin/php-console-yii
-Google Chrome extension "PHP Console": https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef
+## Resources
+
+* PhpConsole homepage: http://php-console.com
+* PhpConsoleYii homepage: http://www.yiiframework.com/extension/php-console
+* PhpConsoleYii repository: https://github.com/barbushin/php-console-yii
+* Google Chrome extension "PHP Console": https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef
