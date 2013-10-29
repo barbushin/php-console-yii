@@ -4,14 +4,15 @@ This extension integrates YII with Google Chrome extension [PHP Console](https:/
 
 ## Requirements
 
-* Yii Framework project
+* Yii Framework v1.* project 
 * Install Google Chrome extension [PHP Console](https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef)
 * Set output_buffering setting to true in php.ini (optional)
 
 ## Installation
 
-1. Download and extract the "phpconsole" folder to your extensions directory (i.e. /protected/extensions).
-2. Modify your config file (i.e. /protected/config/main.php)
+1. Copy "/src/extension/phpconsole"  to your extensions directory (i.e. /protected/extensions).
+2. Copy "/src/vendors/PhpConsole"  to your vendors directory (i.e. /protected/vendors).
+3. Modify your config file (i.e. /protected/config/main.php)
 
 ## Initialization & configuration
 
