@@ -4,7 +4,7 @@ This extension integrates YII with Google Chrome extension [PHP Console](https:/
 
 ## Requirements
 
-* Yii Framework project
+* Yii Framework v1.* project 
 * Install Google Chrome extension [PHP Console](https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef)
 * Set output_buffering setting to true in php.ini (optional)
 
