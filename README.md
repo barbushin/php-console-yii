@@ -63,7 +63,5 @@ Try this code in some controller:
 
 ## Resources
 
-* PhpConsole homepage: http://php-console.com
-* PhpConsoleYii homepage: http://www.yiiframework.com/extension/php-console
-* PhpConsoleYii repository: https://github.com/barbushin/php-console-yii
-* Google Chrome extension "PHP Console": https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef
+* [PHP Console homepage](https://github.com/barbushin/php-console)
+* Google Chrome extension [PHP Console](https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef)
