@@ -72,8 +72,10 @@ class PhpConsoleLogRoute extends CLogRoute {
 	 * This method is invoked after the route is created by the route manager.
 	 */
 	public function init() {
-		/** @noinspection PhpIncludeInspection */
-		require_once(Yii::getPathOfAlias($this->phpConsolePathAlias) . '/__autoload.php');
+		if(!class_exists('PhpConsole\Connector')){
+			/** @noinspection PhpIncludeInspection */
+			require_once(Yii::getPathOfAlias($this->phpConsolePathAlias) . '/__autoload.php');
+		}
 
 		if($this->registerHelper) {
 			Helper::register();
